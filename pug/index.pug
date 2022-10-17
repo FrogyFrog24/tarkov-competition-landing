@@ -1,0 +1,136 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		<meta property="og:locale" content="ru_RU">
+		<meta name="description" content="Escape From Tarkov">
+		<meta property="og:site_name" content="Tarkov.help">
+		<meta property="og:locale" content="ru">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="https://tarkov.help/favicon.ico" rel="icon" type="image/x-icon">
+		<link rel="shortcut icon" type="image/png" href="https://tarkov.help/img/favicon-128x128.png">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+		link(rel="stylesheet" href="./styles/style.min.css")
+		script(src="./js/script.js" defer) 
+		title Турнир Tarkov.Help - Охота на новичков
+	body
+		.sign-up-wrapper
+			span.form-tip Нажмите вне формы, чтобы закрыть
+			form.sign-up-body#signupform
+				.sign-up__title Заявка участника
+				input(type="text" placeholder="Никнейм на Twich*" required)
+				input(type="email" placeholder="Электронная почта*" required autocomplete="off")
+				textarea(form="signupform", cols="30", rows="10" placeholder="Комментарий")
+				button.action-btn(type="submit" ) Отправить
+
+		.headline.wrapper
+			.headline-text
+				.competition-type
+					span Одиночные квалификации на турнир
+				.headline-title
+					h1 Турнир Tarkov.Help
+					h2 Охота на новичков
+						br 
+						| Одиночки
+				button.action-btn(onclick="openPopup()") Записаться на турнир
+			.headline-picture
+				
+		main.wrapper 
+			.rules
+				h3.rules__title Правила проведения турнира
+				.rules-paragraph
+					h4.paragraph__title Цель участников турнира
+					.paragraph-info Игроки за 3 часа игры на локации Таможня, должны как можно больше раз выжить в рейдах и уничтожить как можно больше игроков на карте за один рейд. Турнир основан на PVP механике и удаче в нахождении игроков низкого уровня персонажа. 
+				.rules-paragraph
+					h4.paragraph__title Снаряжение 
+					.paragraph-info Любое снаряжение на любую сумму денег с основного аккаунта игрока.
+				.rules-paragraph
+					h4.paragraph__title Получение очков:
+					.paragraph-info
+						ul.earning-rules-list
+							li Убийства ЧВК с жетоном за один рейд:
+							li 
+								span 1 убийство с жетоном 
+								|- 1 очко
+							li 
+								span 2 убийства с жетоном 
+								|- 4 очка
+							li 
+								span 3 убийства с жетоном 
+								|- 8 очков
+							li 
+								span 4 убийства с жетоном 
+								|- 16 очков
+							li 
+								span 5+ убийств с жетоном 
+								|- за каждого ЧВК по 5 очков
+							li 
+								span Extra: убийтсво оружием ближнего боя 
+								|- 20 очков
+						p.extra-info *(Если уровень убитого ЧВК не превышает или равен 20, то дополнительно дается 4 очка за каждого)
+						p.extra-info *(Учитываются очки только в рейдах, где участник выжил в рейде, обязательно нужно собирать жетоны, иначе очки за убийство не будут засчитаны)
+				.rules-paragraph 
+					h4.paragraph__title Правила подачи заявки:
+					.paragraph-info
+						ul
+							li Заявка должна включать в себя:
+							li - двухчасовой стрим на платформе Twitch с названием: 
+								span Tarkov Help заявка
+							li - ссылка на запись двухчасового стрима 
+							li - с самого начала стрима нужно показать статистику вашего персонажа по убийствам чвк, после уже начинать рейды на локации Таможня
+							li - всегда показывать список убийств в конце рейда, не скрывать экран чем-либо
+							li - по окончанию двух часов показать статистику персонажа по убийством чвк
+							li - количество участников в турнире: 10 человек
+				.rules-paragraph 
+					h4.paragraph__title Минимальные требования к участнику:
+					.paragraph-info
+						ul
+							li - аккаунт на твиче, не важно партнер или нет
+							li - 18 лет или более
+							li - качество стрима для заявки 720p и выше
+							li - умение говорить хорошо на русском языке
+							li - не нарушать правила платформы Twitch
+							li - жить в регионах России
+			.additional
+				.additional-date
+					| Время проведения турнира
+					br
+					span Прием заявок: 12-20 апреля
+					br
+					span Проведение турнира: 23 апреля
+				.additional-map__info
+					.additional-map__title Локация:
+						.additional-map__name Таможня
+					.additional-map__img
+				button.action-btn.bordered(onclick="openPopup()") Записаться на турнир
+			.award
+				h4.award__title Награда победителям 
+				.award-list
+					.award-item
+						.award-item__title 1 место
+						.award-item__text 25 000 ₽
+					.award-item
+						.award-item__title 2 место
+						.award-item__text 14 000 ₽
+					.award-item
+						.award-item__title 3 место
+						.award-item__text 8 000 ₽
+					.award-item
+						.award-item__title 4 место
+						.award-item__text 3 000 ₽ 
+					.award-item.secret-award
+						.secret-award__title + дополнительные секретные призы победителям
+						.secret-award-content
+							img(src="./assets/Zashchishchennaia_papka_0048_icon.webp", alt="")
+							img(src="./assets/Zashchishchennaia_papka_0048_icon.webp", alt="")
+							img(src="./assets/Fleshka_icon.webp", alt="")
+							img(src="./assets/Fleshka_icon.webp", alt="")
+							img(src="./assets/Fleshka_icon.webp", alt="")
+			.sponsors
+				h4.sponsors__title Спонсоры турнира
+				.sponsors-list
+					.sponsors-item
+						img.sponsors-item__name(src="./assets/richmuzik.png" alt="Богатый чувак")
+						a.sponsors-item__name(href="")  pep1ch

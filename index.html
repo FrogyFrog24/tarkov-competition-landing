@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:locale" content="ru_RU">
+<meta name="description" content="Escape From Tarkov">
+<meta property="og:site_name" content="Tarkov.help">
+<meta property="og:locale" content="ru">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="https://tarkov.help/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="shortcut icon" type="image/png" href="https://tarkov.help/img/favicon-128x128.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.min.css">
+    <script src="./js/script.js" defer> </script>
+    <title>Турнир Tarkov.Help - Охота на новичков</title>
+  </head>
+  <body>
+    <div class="sign-up-wrapper"><span class="form-tip">Нажмите вне формы, чтобы закрыть</span>
+      <form class="sign-up-body" id="signupform">
+        <div class="sign-up__title">Заявка участника</div>
+        <input type="text" placeholder="Никнейм на Twich*" required>
+        <input type="email" placeholder="Электронная почта*" required autocomplete="off">
+        <textarea form="signupform" cols="30" rows="10" placeholder="Комментарий"></textarea>
+        <button class="action-btn" type="submit">Отправить</button>
+      </form>
+    </div>
+    <div class="headline wrapper">
+      <div class="headline-text">
+        <div class="competition-type"><span>Одиночные квалификации на турнир</span></div>
+        <div class="headline-title">
+          <h1>Турнир Tarkov.Help</h1>
+          <h2>Охота на новичков<br>Одиночки</h2>
+        </div>
+        <button class="action-btn" onclick="openPopup()">Записаться на турнир</button>
+      </div>
+      <div class="headline-picture"></div>
+    </div>
+    <main class="wrapper"> 
+      <div class="rules">
+        <h3 class="rules__title">Правила проведения турнира</h3>
+        <div class="rules-paragraph">
+          <h4 class="paragraph__title">Цель участников турнира</h4>
+          <div class="paragraph-info">Игроки за 3 часа игры на локации Таможня, должны как можно больше раз выжить в рейдах и уничтожить как можно больше игроков на карте за один рейд. Турнир основан на PVP механике и удаче в нахождении игроков низкого уровня персонажа. </div>
+        </div>
+        <div class="rules-paragraph">
+          <h4 class="paragraph__title">Снаряжение </h4>
+          <div class="paragraph-info">Любое снаряжение на любую сумму денег с основного аккаунта игрока.</div>
+        </div>
+        <div class="rules-paragraph">
+          <h4 class="paragraph__title">Получение очков:</h4>
+          <div class="paragraph-info">
+            <ul class="earning-rules-list">
+              <li>Убийства ЧВК с жетоном за один рейд:</li>
+              <li> <span>1 убийство с жетоном </span>- 1 очко</li>
+              <li> <span>2 убийства с жетоном </span>- 4 очка</li>
+              <li> <span>3 убийства с жетоном </span>- 8 очков</li>
+              <li> <span>4 убийства с жетоном </span>- 16 очков</li>
+              <li> <span>5+ убийств с жетоном </span>- за каждого ЧВК по 5 очков</li>
+              <li> <span>Extra: убийтсво оружием ближнего боя </span>- 20 очков</li>
+            </ul>
+            <p class="extra-info">*(Если уровень убитого ЧВК не превышает или равен 20, то дополнительно дается 4 очка за каждого)</p>
+            <p class="extra-info">*(Учитываются очки только в рейдах, где участник выжил в рейде, обязательно нужно собирать жетоны, иначе очки за убийство не будут засчитаны)</p>
+          </div>
+        </div>
+        <div class="rules-paragraph"> 
+          <h4 class="paragraph__title">Правила подачи заявки:</h4>
+          <div class="paragraph-info">
+            <ul>
+              <li>Заявка должна включать в себя:</li>
+              <li>- двухчасовой стрим на платформе Twitch с названием: <span>Tarkov Help заявка</span></li>
+              <li>- ссылка на запись двухчасового стрима </li>
+              <li>- с самого начала стрима нужно показать статистику вашего персонажа по убийствам чвк, после уже начинать рейды на локации Таможня</li>
+              <li>- всегда показывать список убийств в конце рейда, не скрывать экран чем-либо</li>
+              <li>- по окончанию двух часов показать статистику персонажа по убийством чвк</li>
+              <li>- количество участников в турнире: 10 человек</li>
+            </ul>
+          </div>
+        </div>
+        <div class="rules-paragraph"> 
+          <h4 class="paragraph__title">Минимальные требования к участнику:</h4>
+          <div class="paragraph-info">
+            <ul>
+              <li>- аккаунт на твиче, не важно партнер или нет</li>
+              <li>- 18 лет или более</li>
+              <li>- качество стрима для заявки 720p и выше</li>
+              <li>- умение говорить хорошо на русском языке</li>
+              <li>- не нарушать правила платформы Twitch</li>
+              <li>- жить в регионах России</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="additional">
+        <div class="additional-date">Время проведения турнира<br><span>Прием заявок: 12-20 апреля</span><br><span>Проведение турнира: 23 апреля</span></div>
+        <div class="additional-map__info">
+          <div class="additional-map__title">Локация:
+            <div class="additional-map__name">Таможня</div>
+          </div>
+          <div class="additional-map__img"></div>
+        </div>
+        <button class="action-btn bordered" onclick="openPopup()">Записаться на турнир</button>
+      </div>
+      <div class="award">
+        <h4 class="award__title">Награда победителям </h4>
+        <div class="award-list">
+          <div class="award-item">
+            <div class="award-item__title">1 место</div>
+            <div class="award-item__text">25 000 ₽</div>
+          </div>
+          <div class="award-item">
+            <div class="award-item__title">2 место</div>
+            <div class="award-item__text">14 000 ₽</div>
+          </div>
+          <div class="award-item">
+            <div class="award-item__title">3 место</div>
+            <div class="award-item__text">8 000 ₽</div>
+          </div>
+          <div class="award-item">
+            <div class="award-item__title">4 место</div>
+            <div class="award-item__text">3 000 ₽ </div>
+          </div>
+          <div class="award-item secret-award">
+            <div class="secret-award__title">+ дополнительные секретные призы победителям</div>
+            <div class="secret-award-content"><img src="./assets/Zashchishchennaia_papka_0048_icon.webp" alt=""><img src="./assets/Zashchishchennaia_papka_0048_icon.webp" alt=""><img src="./assets/Fleshka_icon.webp" alt=""><img src="./assets/Fleshka_icon.webp" alt=""><img src="./assets/Fleshka_icon.webp" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="sponsors">
+        <h4 class="sponsors__title">Спонсоры турнира</h4>
+        <div class="sponsors-list">
+          <div class="sponsors-item"><img class="sponsors-item__name" src="./assets/richmuzik.png" alt="Богатый чувак"><a class="sponsors-item__name" href=""> pep1ch</a></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
